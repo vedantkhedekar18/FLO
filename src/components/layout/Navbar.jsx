@@ -72,10 +72,24 @@ export default function Navbar() {
             }}
           >
             FLO
-            <span style={{ color: 'var(--accent)', fontWeight: 600 }}>VISUAL</span>
+            <span style={{ color: solid ? 'var(--accent)' : 'var(--gold-light)', fontWeight: 600 }}>VISUAL</span>
           </Link>
 
-          <nav className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '2.4rem' }}>
+          <nav
+            className="desktop-nav"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '2.4rem',
+              padding: solid ? 0 : '0.7rem 1.6rem',
+              borderRadius: solid ? 0 : 999,
+              background: solid ? 'transparent' : 'rgba(18,30,52,0.28)',
+              border: solid ? '1px solid transparent' : '1px solid rgba(255,255,255,0.16)',
+              backdropFilter: solid ? 'none' : 'blur(16px)',
+              WebkitBackdropFilter: solid ? 'none' : 'blur(16px)',
+              transition: 'background 0.3s ease, padding 0.3s ease, border 0.3s ease',
+            }}
+          >
             {NAV_LINKS.map((link) => {
               const active = location.pathname === link.to;
               return (
