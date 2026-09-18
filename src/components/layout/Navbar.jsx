@@ -38,6 +38,7 @@ export default function Navbar() {
   return (
     <>
       <header
+        className={isHome && !scrolled ? 'home-top-header' : ''}
         style={{
           position: 'fixed',
           top: scrollDir === 'down' && !menuOpen ? '-80px' : 0,
@@ -196,6 +197,10 @@ export default function Navbar() {
         @media (max-width: 900px) {
           .desktop-nav { display: none !important; }
           .mobile-toggle { display: flex !important; }
+        }
+        /* On desktop, the home hero uses its own in-card navbar */
+        @media (min-width: 901px) {
+          .home-top-header { opacity: 0 !important; pointer-events: none !important; }
         }
       `}</style>
     </>
