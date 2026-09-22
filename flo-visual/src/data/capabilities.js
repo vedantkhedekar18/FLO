@@ -1,0 +1,78 @@
+// Interactive editorial capabilities list.
+// Each entry drives the large-typography list on the home page.
+// `media` is shown as a floating hover preview. Replace src values with
+// final FLO VISUAL assets when available.
+export const CAPABILITIES = [
+  {
+    id: 'exterior-cgi',
+    index: '01',
+    title: 'Exterior CGI',
+    category: 'EXTERIOR CGI',
+    tagline: 'Photoreal exteriors — daylight choreography, materiality, and context.',
+    media: { type: 'image', src: '/assets/exterior/14.jpg' },
+    to: '/work?category=EXTERIOR%20CGI',
+  },
+  {
+    id: 'interior-cgi',
+    index: '02',
+    title: 'Interior CGI',
+    category: 'INTERIOR CGI',
+    tagline: 'Curated interiors — tactility, bespoke joinery, soft light.',
+    media: { type: 'image', src: '/assets/interior/Grand lobby_05_HR.jpg' },
+    to: '/work?category=INTERIOR%20CGI',
+  },
+  {
+    id: 'animation-walkthrough',
+    index: '03',
+    title: 'Animation & Walkthrough',
+    category: 'ANIMATION',
+    tagline: 'Cinematic films that move through architecture rather than describe it.',
+    media: { type: 'video', src: '/assets/videos/France.mp4', poster: '/assets/exterior/15.jpg' },
+    to: '/walkthroughs/france-walkthrough',
+  },
+  {
+    id: 'virtual-tours-360',
+    index: '04',
+    title: '360° Virtual Tours',
+    category: '360',
+    tagline: 'Immersive spherical environments — pan, look, and step inside.',
+    media: { type: 'image', src: '/assets/interior/Lobby.jpg' },
+    to: '/360',
+  },
+  {
+    id: 'brochure-design',
+    index: '05',
+    title: 'Brochure Design',
+    category: 'BROCHURE',
+    tagline: 'Editorial marketing publications that sell the space before it exists.',
+    media: { type: 'image', src: '/assets/home/brochure design.jpg' },
+    to: '/work?category=BROCHURE',
+  },
+  {
+    id: 'logo-design',
+    index: '06',
+    title: 'Logo Design',
+    category: 'LOGO',
+    tagline: 'Identity marks with architectural precision and permanence.',
+    media: { type: 'image', src: '/assets/branding/flo-logo.svg' },
+    to: '/work?category=LOGO',
+  },
+  {
+    id: 'drone-shoot',
+    index: '07',
+    title: 'Drone Shoot',
+    category: 'DRONE',
+    tagline: 'Aerial surveys and cinematic flight — context captured from above.',
+    media: { type: 'image', src: '/assets/home/Drone.jpg' },
+    to: '/work?category=DRONE',
+  },
+  {
+    id: 'plans-isometric',
+    index: '08',
+    title: '2D / 3D Floor Plan & Isometric',
+    category: 'FLOOR PLAN',
+    tagline: 'Plans and axonometrics that explain space like a drawing should.',
+    media: { type: 'image', src: '/assets/floor-plans/GROUND FLOOR.jpg' },
+    to: '/work?category=FLOOR%20PLAN',
+  },
+];
